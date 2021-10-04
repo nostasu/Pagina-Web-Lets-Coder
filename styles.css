@@ -1,0 +1,139 @@
+/* *{
+    border: 1px solid red;
+}    */
+
+body{
+    text-align: center;
+    font-size:1.5em;
+}
+
+main{
+    width:95%;
+    margin:auto;
+}
+
+header{
+    /* position:relative; */
+    text-align:center;
+    background-image: url("./images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-position:center 100px;
+    background-size:cover;
+    margin-bottom: 50px;
+    height: 400px;
+
+}
+h1{
+    color:white;
+    height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    /* height especifica la ALTURA del contenido. */
+}
+
+h2{
+    font-size:1.75em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.navegacion{
+    background-color: grey;
+    float:left;
+    /*con esto se me descuadra el logo  */
+}
+
+.logo{
+
+    align-items: center;
+    /* left: 45%; */
+    /* transform: translate(0%, 50%); */
+    /* position: relative;*/
+    margin-left:-300px; 
+}
+ 
+.mentor{
+    display:inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin:0 20px;
+    /*margen para separar un poco las imagenes entre ellas*/
+}
+
+.mentor img{
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 250px;
+}
+
+.mentor img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out 0.1s;
+    /* tarda 0.5 segundos en hacer la transicion y 0.1 segundos desde que posicionamos raton*/
+}
+
+.lineas{
+    display:flex;
+    flex-direction:column; 
+    align-items:center;
+
+    margin-bottom:150px;
+}
+
+.lineas p{
+    margin:0px 6px;
+}
+
+.linea{
+    display:flex;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    display:inline-block;
+    font-weight: bold;
+    text-align: right;
+    font-size: 40px;
+    width: 52px;
+} 
+.diames{
+  display: inline-block;
+  text-align:center;    
+}
+ 
+/* .linea3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+
+
+}  */
+
+.modalidad p:first-child{
+    font-weight: bold;
+}
+
+.modalidad{
+    display: inline-block;
+    text-align:left;  
+}
+.boton{
+    display:inline-block;
+    text-align: center;
+    padding: 30px;
+}
+
+.contacto{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.contacto p{
+    margin: 0 auto;
+}
+
