@@ -8,7 +8,6 @@
 :root{
     --color-letra: #111;
     --color-azul: blue;
-
 }
 
 body{
@@ -21,23 +20,20 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
-    min-height: 100vh;
+    min-height: 97vh;
+    padding-bottom: 5vh;
     /* min-width: 100vw; */
 }
 
-
 header{
-
     text-align:center;
     margin-bottom: 50px;
     height: 100px;
-
 }
 
 main{
     width:80%;
     margin:auto;
-
 }
 
 h1{
@@ -64,25 +60,20 @@ h3{
 
 /*Pagina contactanos y cabecera y footer*/
 
-
-
 .contacto p{
     margin: 0 auto;
 }
 
 .navegacion{
-    
     background-color: rgb(20, 20, 20);
     display:flex;
     flex-direction: row;
     align-items: center;
     padding:0px 30px;
     justify-content: space-between;
-
 }
 
 a{
-    /* margin: 10px; */
     text-decoration:none;
     font-style: oblique;
     color:rgb(247, 247, 247);
@@ -92,19 +83,27 @@ a:visited {
     color:rgb(247, 247, 247);
 }
 
+.active{
+    background: linear-gradient(var(--color-azul),var(--color-letra));
+    align-items: center;
+    height: 55px;
+    padding:15px 50px;
+}
+
 .sinFondo{
     width: 170px; 
-    /* height: 70px; */
 }
 footer {
     display: flex; 
-    background-color: aqua;
+    background-color: aqua;    
+    color:var(--color-letra);
     font-size: small;
     width: 100%;
     align-items: center;
     position:fixed; 
     bottom:0px;
-    color:var(--color-letra);
+    height: 3vh;
+    font-size: 0.75em;
 }
 
 .footer-email{
@@ -128,7 +127,6 @@ footer {
     display:flex;
     flex-direction:column; 
     align-items:center;
-
 }
 
 .mentores--mentor{
@@ -138,7 +136,6 @@ footer {
 }
 
 .mentores--mentor img{
-
     margin-top: 30px;
     border-radius: 50%;
     width: 250px;
@@ -168,10 +165,6 @@ footer {
     flex-direction: row;
     justify-content:center;
     align-items: center;
-
-    /* flex: 1 1 auto; */
-
-
 }
 
 .linea{
@@ -192,15 +185,13 @@ footer {
 
     align-items: center;
     border-bottom: 1px solid #666;
-
 }
-.linea--numberdiames--number{
 
+.linea--numberdiames--number{
     padding:30px;
     display:inline-block;
     font-weight: bold;
     font-size: 100px;
-
     text-shadow: 1px 1px 2px var(--color-azul);;
 }
 
@@ -208,7 +199,6 @@ footer {
     display:inline-block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding:15px;
-
 }
 
 .linea--numberdiames--diames{
@@ -225,8 +215,7 @@ footer {
 }
 
 .linea--numberdiames:hover{
-    transform: rotate(0.5turn);;
-    
+    transform: rotate(0.5turn);; 
 }
 
 .linea--online{
@@ -248,68 +237,57 @@ footer {
     width: 150px;
     margin:auto;
     font-size: 25px;
+    border: 1px solid var(--color-letra);
     border-radius: 20px;
     background-color:aqua;
 }
 
+.boton:visited{
+    color:var(--color-letra);
+}
 .calendario{
-
     border: 1px solid rgb(5, 5, 5);
-
     height: 385px;
 }
 
 .todaslineas{
-
     display:flex;
     flex: 1 0 auto;
     /* Primer parametro, cantidad de espacio que debe ocupar el elemento */
     flex-direction: row;
-
 }
-
-
-
 /*Estilos tabla */
-
 /* .tabla{
     overflow-y: scroll;
-
 } */
 
 .tabla{
-    border-radius: 10%;
+    margin-bottom: 50px;
 }
 table{
-
     width:100%;
     border-collapse:collapse;
-
     /*El borde que viene por defecto tambien me mola*/
     caption-side: top;
     vertical-align: bottom;
     font-size: 25px;
     color: var(--color-letra);
-
-     /* border: 1px solid black;
-    border-radius: 10px; */
-
-
 }
 
 table th{
     border: 1px solid black;
     background-color: rgba(0, 17, 255, 0.7);
     font-style: italic;
-    
-
 }
 
 td{
     border: 1px solid black;
-
 }
 
+th{
+    font-size: 1.25em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 tr:hover{
     background-color: rgba(219, 219, 103, 0.178);
 }
@@ -326,44 +304,244 @@ table td:first-child{
     font-weight: bold;
 }
 
-/* table td:nth-child(odd){
-    font-size:1.25em;
-} */
-
 th, td {
     padding: 15px;
-    
 }
 
 /*Listas*/
 
-
-/*Hijos, los ol que están dentro del grid container*/
-.html--css{
-    border: 1px solid black;
-    display: grid;
+.listas--container{
+    display: flex;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px; 
-    /* justify-items:center;   */
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
-.html-css, p::first-line{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    background-color: #dfdfdf;
+.html{
+    display: inline-block;
+    border: 1px solid black;
+    flex-direction: column;
+    list-style-type: none;
+    width: 50%;
+    min-height: 80%;
+}
+
+.html1, .html2{
+    flex-direction: column;
+    display: inline-block;
+    flex-direction: row;
+    width:auto;
+    font-size: 1.25em;
+    font-weight:bolder;
+    margin-top: 15px;
+}
+
+.html1 {
+    padding-right: 100px;
+    margin-right: 100px;
+    align-content: center;
+}
+
+.css{
+    display: inline-block;
+    border: 1px solid black;
+    flex-direction: column;
+    /* height: 100%; */
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+/*Selecciono todos los elementos de la clase css1 y css2*/
+.css1, .css2{
+    flex-direction: column;
+    display: inline-block;
+    flex-direction: row;
+    width:auto;
+    vertical-align: top;
+    font-size: 1.25em;
+    font-weight:bolder;
+    margin-top: 15px;
+}
+
+.css1{ 
+    padding-right: 100px;
+    margin-right: 100px;
+    text-align: start;
+}
+.html p{
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 17, 255, 0.7);
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.css p{
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 17, 255, 0.7);
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ul{
+    display: block;
+    list-style-type: square;
+    margin: 10px 10px;
+}
+
+li:before {
+    content: "";
+    padding-left: 0px;
+}
+
+ul li{
+    font-size: 1em;
+    font-weight:normal;
+    margin: 0px 20px;
 }
 
 ol{
-    text-align: left;
+    list-style-type: circle;
 }
 
-
-ol li{
-    margin-left:20px;
+.horario{
+    width: 100%;
+    border: 1px solid var(--color-letra);
 }
 
-ol li ul li{
-    margin-left:20px;
+dl dt:nth-child(3n+1){
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 17, 255, 0.7);
+    padding: 8px;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+dt{
+    background-color: #dfdfdf;
+    padding:10px;
+    font-style: oblique;
+}
+
+dd{
+    margin:5px;
+}
+dd:hover {
+    background-color: rgba(219, 219, 103, 0.178);
+}
+
+/*Formulario*/
+
+.formulario{
+    border: var(--color-letra);
+    box-shadow: 1px 2px 10px var(--color-azul);
+    width: 80%;
+    margin: auto;
+}
+
+textarea{
+    width: 80%;
+    margin: 15px 10px;
+    padding: 15px;
+    font-size:1.25em;
+}
+
+input, select{
+    padding: 10px 12px;
+    margin: 15px;
+    border: none;
+    border-bottom: 2px solid var(--color-letra);
+    background-color: transparent;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+
+.form--datos-personales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px 5px;
+    align-content: center;
+    justify-content:space-between;
+    width: 95%;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+#nombre, #edad, #telefono, #email, #cp{
+    flex-basis: 30%;
+}
+
+#poblacion, #email{
+    flex-grow:1;
+}
+
+#apellidos{
+    flex-grow: 1;
+    flex-basis: 60%;
+}
+
+.genero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 30%;
+    margin: 15px;
+    flex-basis:30%;
+    justify-content: center;
+}
+
+.genero--hm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 15px;
+}
+
+.form--info-curso{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 15px 5px;
+    width: 95%;
+    margin:15px auto;
+    justify-content: center;
+}
+
+.form--info-curso-modalidad{
+    width: 30%;
+
+}
+.form--info-curso-modalidad--fp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.form--info-curso-cf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.form--info-curso-ciudadfecha{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+}
+
+.formulario .boton{
+    margin:15px;
+}
+
+.tecnologias{
+    width: 100%;
+    margin:15px 20px;
+}

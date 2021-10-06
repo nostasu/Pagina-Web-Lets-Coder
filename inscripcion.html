@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <link rel="stylesheet" href="./newStyles.css" />
+</head>
+
+<body>
+    <div class="imagen">
+        <header>
+            <nav>
+                <div class="navegacion">
+                    <img src="./images/letscoder-sin-fondo.png" class="sinFondo" alt="Logo Let's Coder navegación">
+
+                    <a href="./home.html"> Home </a>
+                    <a href="./conocenos.html"> Conócenos </a>
+                    <a href="./contacto.html"> Contacto </a>
+                    <a href="./info.html"> Bootcamp Informacion</a>
+                    <a href="./inscripcion.html" class="active"> Formulario Inscripción</a>
+
+                </div>
+            </nav>
+            <!-- <img src="./images/letscoder-square.jpeg" class="logo" alt="Logo de Let's Coder" /> -->
+
+        </header>
+        <main>
+            <div class="formulario">
+                <h3>Inscripción</h3>
+                <div class="form--datos-personales">
+                    <input required type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input required type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+                    <input required type="number" name="edad" id="edad" placeholder="Edad">
+                    <input required type="text" name="poblacion" id="poblacion" placeholder="Poblacion">
+                    <input required type="number" name="cp" id="cp" placeholder="CP">
+                    <input required type="tel" name="telefono" id="telefono" placeholder="Telefono">
+                    <input required type="email" name="email" id="email" placeholder="email">
+                    <div class="genero"> Genero:
+                        <div class="genero--hm">
+                            <label><input type="radio" name="genero" id="generoM"> Masculino</label>
+                            <label><input type="radio" name="genero" id="generoF"> Femenino</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form--info-curso">
+                    <div class="form--info-curso-modalidad"> Modalidad estudios:
+                        <div class="form--info-curso-modalidad--fp">
+                            <label><input required type="radio" name="modalidad" id="fulltime"> Full Time</label>
+                            <label><input required type="radio" name="modalidad" id="parttime"> Part Time</label>
+                        </div>
+                    </div>
+                    <div class="form--info-curso-cf"> ¿Donde y cuando quiere realizarlo?
+                        <div class="form--info-curso-ciudadfecha">
+                            <select required name="Ciudad" id="ciudad">
+                                <option value="" disabled selected hidden> Selecciona una ciudad</option>
+                                <option>Zaragoza</option>
+                                <option>Madrid</option>
+                                <option>Tenerife</option>
+                                <option>Valencia</option>
+                                <option>Pamplona</option>
+                            </select>
+                            <input type="date" name="fecha" id="fecha">
+                        </div>
+                    </div>
+                    <div class="tecnologias"> Tecnologías que conoces:
+                        <input type="checkbox" name="cbox" id="cbox--html">Html
+                        <input type="checkbox" name="cbox" id="cbox--css">Css
+                        <input type="checkbox" name="cbox" id="cbox--flexbox">Flexbox
+                        <input type="checkbox" name="cbox" id="cbox--grid">Grid
+                        <input type="checkbox" name="cbox" id="cbox--git">Git
+                    </div>
+                </div>
+                <div class="form--comentarios">
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Escriba aqui sus comentarios"></textarea>
+
+                </div>
+
+                <button class="boton"> Inscribirme </button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-email">mail: hola@letscoder.com </div>
+            <div class="footer-telefono">Tlf: +34 931 227 721</div>
+            <div class="footer-copyright">&copy; Todos los derechos reservados</div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
