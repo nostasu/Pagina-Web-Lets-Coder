@@ -94,26 +94,22 @@ a:visited {
     width: 170px; 
 }
 footer {
-    display: flex; 
+    /* display: flex;  */
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    margin:auto;
+    justify-content:center;
+    align-items:center;
     background-color: aqua;    
     color:var(--color-letra);
     font-size: small;
     width: 100%;
-    align-items: center;
     position:fixed; 
     bottom:0px;
-    height: 3vh;
+    height: 4vh;
     font-size: 0.75em;
 }
 
-.footer-email{
-    width:33%;
-    text-align: right;
-}
-
-.footer-telefono{
-    width:34%;
-}
 
 .mapa{
     border: 5px solid rgb(5, 5, 5);
@@ -268,7 +264,6 @@ table{
     width:100%;
     border-collapse:collapse;
     /*El borde que viene por defecto tambien me mola*/
-    caption-side: top;
     vertical-align: bottom;
     font-size: 25px;
     color: var(--color-letra);
@@ -312,7 +307,6 @@ th, td {
 
 .listas--container{
     display: flex;
-    width: 100%;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -545,3 +539,154 @@ input, select{
     width: 100%;
     margin:15px 20px;
 }
+
+
+@media only screen and (max-width:1200px){
+    header{
+        height: 30vh;
+        width: 100%;
+    }
+
+    body{ 
+        height: 100vh;
+    }
+
+    main{
+        width: 90%;
+        margin:auto;
+        padding: 5px;
+    }
+
+    footer{
+        /* height: 8vh; */
+        display : none; 
+        visibility : hidden; 
+    }
+
+    .mapa{
+        width: 70%;
+        height: 70%;
+    }
+
+    /* pagina conocenos con footer y nav*/
+    .navegacion{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed;
+        width: 100%;
+        top:0px;
+    }
+
+    .active{
+        width: 100%;
+    }
+
+    h2{
+        margin-bottom: 25px;
+    }
+
+    table{
+        display: block;
+        overflow-x: scroll;
+    }
+
+    .listas--container {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        
+    }
+
+    /*pagina mentores*/
+    .mentores {
+        margin-top: 25px;
+        align-items: center;
+    }
+    .mentores--mentor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .mentores--mentor img {
+        border-radius: 50%;
+        width: 40%;
+        margin:auto;
+    }
+
+
+    .mentores--mentor--texto{
+        text-align: center;
+    }
+    
+    .html1, .html2, .css1, .css2{
+        display: flex;
+        padding-right: 0px;
+        margin-right: 0px;
+        justify-content: space-evenly;
+    }
+
+    /* Inscripcion*/
+
+    #nombre, #edad, #telefono, #email, #cp, #poblacion, #email, #apellidos, #ciudad, #fecha{
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .genero{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .genero--hm{
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .form--info-curso-modalidad{
+        display:block;
+        width: 100%;
+    }
+
+    .tecnologias{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form--info-curso-ciudadfecha {
+        display: flex;
+        gap: 0px 10px;
+        flex-direction: column;
+    }
+
+    .form--info-curso-ciudadfecha #ciudad, #fecha{
+        margin:10px;
+        padding:0px;
+    }
+
+    /*home*/
+    .lineas{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .calendario{
+            width: 70%;
+            height: 70%;
+            margin: auto;
+    }
+
+    .todaslineas{
+        flex-direction: column;
+        width: 20%;  
+        margin: auto;
+    }
+
+    .linea{
+        width: 100%;
+    }
+  }
