@@ -573,7 +573,7 @@ input, select{
         display:flex;
         flex-direction: column;
         align-items: center;
-        position:fixed;
+        /* position:fixed; */
         width: 100%;
         top:0px;
     }
@@ -682,11 +682,12 @@ input, select{
 
     .todaslineas{
         flex-direction: column;
-        width: 20%;  
+        width: 47%; 
         margin: auto;
     }
 
     .linea{
         width: 100%;
     }
+
   }
