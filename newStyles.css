@@ -305,24 +305,8 @@ th, td {
 
 /*Listas*/
 
-.listas--container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-}
 
-.html{
-    display: inline-block;
-    border: 1px solid black;
-    flex-direction: column;
-    list-style-type: none;
-    width: 50%;
-    min-height: 80%;
-}
-
-.html1, .html2{
+/* .html1, .html2{
     flex-direction: column;
     display: inline-block;
     flex-direction: row;
@@ -336,10 +320,25 @@ th, td {
     padding-right: 100px;
     margin-right: 100px;
     align-content: center;
+} */
+
+.listas--container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25px;
+}
+
+.html{
+    display: inline;
+    border: 1px solid black;
+    flex-direction: column;
+    width: 50%;
+    min-height: 80%;
 }
 
 .css{
-    display: inline-block;
+    display: inline;
     border: 1px solid black;
     flex-direction: column;
     /* height: 100%; */
@@ -348,58 +347,39 @@ th, td {
 }
 
 /*Selecciono todos los elementos de la clase css1 y css2*/
-.css1, .css2{
-    flex-direction: column;
-    display: inline-block;
+
+ol{
+    font-weight: bolder;
+    font-size: 1.25em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    display: flex;
     flex-direction: row;
-    width:auto;
-    vertical-align: top;
-    font-size: 1.25em;
-    font-weight:bolder;
-    margin-top: 15px;
+    justify-content: space-around;
+    list-style-type: decimal;
+} 
+
+ol li{
+    padding: 3px;
 }
 
-.css1{ 
-    padding-right: 100px;
-    margin-right: 100px;
-    text-align: start;
-}
-.html p{
-    border-bottom: 1px solid black;
-    background-color: rgba(0, 17, 255, 0.7);
-    font-style: italic;
-    font-size: 1.25em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.css p{
-    border-bottom: 1px solid black;
-    background-color: rgba(0, 17, 255, 0.7);
-    font-style: italic;
-    font-size: 1.25em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-ul{
-    display: block;
-    list-style-type: square;
-    margin: 10px 10px;
-}
-
-li:before {
-    content: "";
-    padding-left: 0px;
-}
 
 ul li{
     font-size: 1em;
     font-weight:normal;
     margin: 0px 20px;
+
 }
 
-ol{
-    list-style-type: circle;
+.html p, .css p{
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 17, 255, 0.7);
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* Comienza el horario del dia */
 
 .horario{
     width: 100%;
@@ -612,7 +592,6 @@ input, select{
         margin-bottom: 30px;
     }
     .mentores--mentor img {
-        border-radius: 50%;
         width: 40%;
         margin:auto;
     }
@@ -712,6 +691,10 @@ input, select{
     .linea--numberdiames--diames{
         margin: 2px; 
         padding: 2px;
+    }
+
+    .formulario{
+        width: 100%;
     }
 
   }
