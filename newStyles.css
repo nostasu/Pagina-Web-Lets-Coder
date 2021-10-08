@@ -22,7 +22,7 @@ body{
     position:relative;
     min-height: 97vh;
     padding-bottom: 5vh;
-    /* min-width: 100vw; */
+
 }
 
 header{
@@ -87,14 +87,14 @@ a:visited {
     background: linear-gradient(var(--color-azul),var(--color-letra));
     align-items: center;
     height: 55px;
-    padding:15px 50px;
+    padding: 15px 50px;
 }
 
 .sinFondo{
     width: 170px; 
 }
+
 footer {
-    /* display: flex;  */
     display:grid;
     grid-template-columns: 30% 30% 30%;
     margin:auto;
@@ -575,6 +575,7 @@ input, select{
         align-items: center;
         /* position:fixed; */
         width: 100%;
+
         top:0px;
     }
 
@@ -670,24 +671,47 @@ input, select{
     /*home*/
     .lineas{
         flex-direction: column;
-        width: 90%;
         margin: auto;
-    }
-
-    .calendario{
-            width: 70%;
-            height: 70%;
-            margin: auto;
     }
 
     .todaslineas{
         flex-direction: column;
-        width: 47%; 
         margin: auto;
     }
 
     .linea{
-        width: 100%;
+        width: 383px;
+        margin: auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px){
+    .calendario{
+          display:none;
+          visibility : hidden;
+    }
+
+    .active{
+        background: none;
+
+        align-items: center;
+        height: auto;
+    }
+    .linea{
+        width: 250px;
+    }
+    .linea--numberdiames{
+        display: flex;
+        flex-direction: column;
+    }
+    .linea--numberdiames--number{
+        margin: 2px;
+        padding: 2px;
+    }
+    .linea--numberdiames--diames{
+        margin: 2px; 
+        padding: 2px;
     }
 
   }
