@@ -576,11 +576,11 @@ input, select{
         display: block;
         overflow-x: scroll;
     }
-
     .listas--container {
         display:flex;
         flex-direction: column;
         margin-bottom: 25px;
+        margin: auto;
         
     }
 
@@ -668,12 +668,12 @@ input, select{
         margin: auto;
     }
 
-  }
+
 
   @media only screen and (max-width: 400px){
     .calendario{
-          display:none;
-          visibility : hidden;
+        display:none;
+        visibility : hidden;
     }
 
     .active{
@@ -702,4 +702,21 @@ input, select{
         width: 100%;
     }
 
+    main{
+        width:100%;
+    }
+
+    .html, .css{
+        display: flex;
+        width: 98%;
+    }
+
+    ol, li{
+        display:flex;
+        flex-direction: column;
+        font-weight: bolder;
+        list-style-type: decimal;
+        padding-left: 0px;
+    }
   }
+}
