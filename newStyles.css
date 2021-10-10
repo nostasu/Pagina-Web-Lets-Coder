@@ -668,6 +668,19 @@ input, select{
         margin: auto;
     }
 
+    .html, .css{
+        display: flex;
+        width: 98%;
+    }
+
+    ol, li{
+        display:flex;
+        flex-direction: column;
+        font-weight: bolder;
+        list-style-type: decimal;
+        padding-left: 0px;
+    }
+
 
 
   @media only screen and (max-width: 400px){
@@ -706,17 +719,5 @@ input, select{
         width:100%;
     }
 
-    .html, .css{
-        display: flex;
-        width: 98%;
-    }
-
-    ol, li{
-        display:flex;
-        flex-direction: column;
-        font-weight: bolder;
-        list-style-type: decimal;
-        padding-left: 0px;
-    }
   }
 }
