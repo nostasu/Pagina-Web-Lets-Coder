@@ -2,6 +2,9 @@
 
 Es el primer proyecto que hacemos en el Bootcamp de Let's Coder. Se trata de una página web con varios apartados en el que se pone en práctica lo aprendido con HTML y CSS. 
 
+# Enlace para la vista de la página web
+https://modest-jepsen-0aa7af.netlify.app/inscripcion.html
+
 # Estructura
 La página web consta de 5 páginas. Todas las páginas tienen una barra de navegacion para navegar de manera fácil por la página web. El footer se ha realizado con grid para trabajarlo aunque sea de una manera mínima.
 
